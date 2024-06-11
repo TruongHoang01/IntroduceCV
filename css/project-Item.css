@@ -1,0 +1,138 @@
+
+.inline{
+    display: inline-block;
+}
+*{
+    font-size: 16px;
+    line-height: 1.4;
+}
+.bold{
+    font-weight: bold;
+}
+.container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas:
+    'goal goal team timeline'
+    'scope scope primary timeline';
+    gap: 15px;
+    background-color: #0000FF;
+    border: 20px solid #0000FF;
+    border-left: 10px solid #0000FF;
+    border-right: 10px solid #0000FF;
+    box-shadow: 0px 0px 10px 10px #c3c3c3;
+}
+.goals{
+    grid-area: goal;
+}
+.team{
+    grid-area: team;
+}
+.scopes{
+    grid-area: scope;
+}
+.primary{
+    grid-area: primary;
+}
+.timeline{
+    grid-area: timeline;
+}
+.goals h3, .team h3, .scopes h3, .primary h3, .timeline h3{
+    margin: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #8b8b8b;
+    color: #0000FF;
+    font-weight: bold;
+}
+.goals , .team, .scopes, .primary, .timeline{
+    background-color: #F0F8FF;
+}
+
+/* goal */
+
+.goal-container{
+    display: grid;
+}
+.goal{
+    display: flex;
+    border-bottom: 1px solid #dee2e6;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.goal-container .goal i{
+    margin: 10px 30px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+/* scope */
+.scope-group{
+    display: grid;
+    grid-template-areas:
+    'in out';
+}
+.scope{
+    margin: 0 25px;
+}
+.scope h4{
+    font-weight: bold;
+}
+.scope-in{
+    grid-area: in;
+}
+.scope-out{
+    grid-area: out;
+}
+
+/* member */
+.team-members{
+    display: grid;
+    gap: 20px;
+}
+.team-members .member{
+    display: flex;
+}
+.team-members .member i{
+    margin: 0px 25px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+/* primary */
+.primaries{
+    display: grid;
+}
+.primary-info{
+    display: flex;
+}
+.primary-info i{
+    margin: 0px 25px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+/* timeline */
+.timeline-group{
+    display: grid;
+    gap: 15px;
+}
+.time-line-items{
+    display: flex;
+    margin-right: 15px;
+}
+.time-line-items h4{
+    margin: 0px 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    border-radius: 75%;
+    border: 1px solid black;
+    padding: 10px 10px;
+    align-self: center;
+    background-color: #9E88FF;
+    color: white;
+}
+.time-line-item{
+    padding: 0 12px;
+    border-bottom: 1px dashed #86b7fe;
+}

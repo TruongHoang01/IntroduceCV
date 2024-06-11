@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1024px){
+    .goal i, .team i, .primary i{
+        text-align: center;
+    }
+     p{
+
+    }
+    .container{
+        grid-template-areas:
+        'goal'
+        'scope'
+        'team'
+        'primary'
+        'timeline'!important;
+    }
+
+    /* goal */
+    .goal{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .goal-container .goal i {
+        margin: 0;
+        margin-left: 0;
+        font-size: 25px;
+    }
+
+    /* scope */
+    .scope-group {
+        grid-template-areas:
+            'in'
+            'out';
+    }
+
+    /* member */
+    .team-members .member{
+        display: grid;
+        margin: 0 30px;
+    }
+    
+    /* primary */
+    .primaries{
+        margin-bottom: 30px;
+        gap: 15px;
+    }
+    .primary-info {
+        display: grid;
+    }
+    .primary-info p{
+        margin: 0 30px;
+    }
+
+    /* timeline */
+    .time-line-items{
+        display: grid;
+        margin-left: 30px;
+    }
+    .time-line-items h4 {
+        width: fit-content;
+    }
+}

@@ -1,0 +1,9 @@
+@media only screen and (max-width: 430px){
+    .container{
+        margin-top: 0;
+    }
+    /* goal */
+    .goal{
+        margin-bottom: 10px;
+    }
+}
